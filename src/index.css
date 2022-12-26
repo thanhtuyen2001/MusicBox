@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Active Navigation Link */
+.active {
+  @apply text-cyan-500;
+}
+
+.active svg {
+  @apply text-cyan-500;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bar:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.bar:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.bar:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.smooth-transition {
+  transition: all 0.3s ease-in-out;
+}
+.stroke{
+  -webkit-text-stroke: 3px #8792a2;
+  /* -webkit-text-stroke: 3px red; */
+  -webkit-text-fill-color: transparent;
+  /* -webkit-animation: fill 0.5s infinite alternate; */
+}
+.strokeTop1{
+  -webkit-text-stroke: 3px #e35050;
+}
+.strokeTop2{
+  -webkit-text-stroke: 3px #27bd9c;
+}
+.strokeTop3{
+  -webkit-text-stroke: 3px #4a90e2;
+}
+/* @-webkit-keyframes fill {
+  from { -webkit-text-fill-color: steelblue; }
+  to { -webkit-text-fill-color: slategrey; }
+} */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer base{
+  h1{
+    @apply text-[#1d3557] font-bold;
+  }
+  h2{
+    @apply text-zinc-700;
+  }
+}
+
+/* style component  */
+@layer components {
+  .pageTheme {
+    @apply bg-[#1d375a] h-screen text-white;
+  }
+  .sidebar{
+    @apply h-screen hidden md:flex flex-col w-[24px] bg-[#294162]
+     shadow-md;
+  }
+  .music-player{
+    @apply fixed h-28 bottom-0 left-0 right-0 
+            flex 
+            animate-slideup 
+            bg-gradient-to-br from-white/10 to-[#2a2a80] backdrop-blur-lg 
+            rounded-t-3xl z-10;
+  }
+
+  .song-card {
+    @apply bg-[#ebf2e9] p-4 m-2 shadow-blue-100 
+            shadow-md animate-slideup
+            rounded-md hover:bg-slate-500
+            transition-all w-56
+            hover:border-t-indigo-400 hover:shadow-2xl 
+            cursor-pointer;
+  }
+};
