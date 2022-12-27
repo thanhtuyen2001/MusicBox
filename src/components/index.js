@@ -12,7 +12,7 @@ import Error from './Error';
 import LoveBtn from './LoveBtn';
 import Footer from './Footer';
 import Playlist from './PlayList';
-import NewSong from './NewSong/Index';
+import NewSong from './NewSong';
 import ListMV from './ListMV';
 export {
   TopPlay,

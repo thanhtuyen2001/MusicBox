@@ -39,8 +39,8 @@ const TopCharts = () => {
           <div key={i} className="flex items-center justify-between  gap-4 hover:bg-[#344b6b] m-4 p-2 rounded-md">
             <div className="flex justify-center items-center gap-2 ">
             <div className={`font-Roboto stroke text-[3em]  ${i===0 ? 'strokeTop1' : i === 1 ? 'strokeTop2' : i === 2 ? 'strokeTop3' : ''} `} 
-              > {i + 1} - </div>
-              <div className="max-w-[80px] max-h-[80px] rounded-full overflow-hidden">
+              > {i < 9 ? `0${i + 1}` : `${i+1}`} - </div>
+              <div className="max-w-[80px] max-h-[80px] rounded-full overflow-hidden ml-2">
                 <img
                   src={
                     song?.images?.coverart ? song?.images?.coverart : songCover

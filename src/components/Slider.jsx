@@ -8,6 +8,8 @@ import "swiper/css/pagination";
 
 import { useGetTopChartsQuery } from '../redux/services/ShazamCore';
 
+import { Loader } from "../components";
+
 const imgSrc = [
     "https://images.unsplash.com/photo-1513297887119-d46091b24bfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hyaXN0bWFzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     "https://images.unsplash.com/photo-1513297887119-d46091b24bfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hyaXN0bWFzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -16,9 +18,13 @@ const imgSrc = [
 
 
 const Slider = () => {
-    const { data } = useGetTopChartsQuery();
+    const { data, isFetching } = useGetTopChartsQuery();
+    if(isFetching){
+        return <Loader title="Loading songs..." />;
+    }
 
     const topPlay = data?.slice(5, 9);
+    console.log('toppaly', topPlay)
    
 
     return (

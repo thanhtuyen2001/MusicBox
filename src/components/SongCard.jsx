@@ -20,7 +20,7 @@ const SongCard = ({ song, i, activeSong, isPlaying, data }) => {
   console.log(song);
 
   return (
-    <div className="song-card group">
+    <div className="song-card  group">
       <div className="overflow-hidden rounded-2xl relative">
         <img
           alt="song_img"
@@ -42,12 +42,12 @@ const SongCard = ({ song, i, activeSong, isPlaying, data }) => {
             song={song}
             handlePause={handlePauseClick}
             handlePlay={handlePlayClick}
-            customeStyle="text-slate-300 text-5xl"
+            customeStyle="text-white text-5xl "
           />
         </div>
       </div>
 
-      <div>
+      <div className="m-1 ">
         <h1>
           <Link to={`/songs/${song?.key}`}>{song.title}</Link>
         </h1>

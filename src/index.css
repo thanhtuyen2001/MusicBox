@@ -4,9 +4,8 @@
 
 /* Active Navigation Link */
 .active {
-  @apply text-cyan-500;
+  @apply text-cyan-500 shadow-lg;
 }
-
 .active svg {
   @apply text-cyan-500;
 }
@@ -30,6 +29,8 @@
 .smooth-transition {
   transition: all 0.3s ease-in-out;
 }
+
+ /* stroke for text */
 .stroke{
   -webkit-text-stroke: 3px #8792a2;
   /* -webkit-text-stroke: 3px red; */
@@ -63,10 +64,10 @@
 
 @layer base{
   h1{
-    @apply text-[#1d3557] font-bold;
+    @apply text-white font-semibold font-Roboto;
   }
   h2{
-    @apply text-zinc-700;
+    @apply text-white font-Roboto;
   }
 }
 
@@ -86,10 +87,11 @@
             bg-gradient-to-br from-white/10 to-[#2a2a80] backdrop-blur-lg 
             rounded-t-3xl z-10;
   }
-
+  /* bg-gradient-to-r from-indigo-500 via-purple-500 via-indigo-500 via-pink-500 to-indigo-500 */
   .song-card {
-    @apply bg-[#ebf2e9] p-4 m-2 shadow-blue-100 
-            shadow-md animate-slideup
+    @apply border
+             p-4 m-2 shadow-blue-100 
+             animate-slideup
             rounded-md hover:bg-slate-500
             transition-all w-56
             hover:border-t-indigo-400 hover:shadow-2xl 

@@ -11,7 +11,7 @@ const NavLinks = ({ handleClick }) => (
     {
       links.map((item) => (
         <NavLink
-          className="flex items-center text-2xl  p-4  hover:bg-[#3f5472]"
+          className="flex items-center text-2xl  p-4 hover:bg-[#3f5472]"
           key={item.name}
           to={item.to}
           onClick={() => handleClick && handleClick()}
@@ -34,7 +34,7 @@ const Sidebar = () => {
       </div>
 
       {/* mobile sidebar  */}
-      <div className="absolute md:hidden block top-4 left-3">
+      {/* <div className="absolute md:hidden block top-4 left-3">
         {
           !mobileMenuOpen &&
           (<HiOutlineMenu className="w-6 h-6 mr-2" onClick={() => setMobileMenuOpen(true)}/>)
@@ -48,7 +48,7 @@ const Sidebar = () => {
           mobileMenuOpen &&
           (<RiCloseLine className="absolute top-2 right-2 w-6 h-6 mr-2 text-white" onClick={() => setMobileMenuOpen(false)}/>) 
         }
-      </div>
+      </div> */}
     </div>
   )
 }

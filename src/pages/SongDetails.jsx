@@ -25,24 +25,24 @@ const SongDetails = () => {
           customeStyle="rounded-2xl w-72"
           className="w-72"
         />
-        <div className="font-AndikaTitle text-2xl text-white m-2">
+        <div className="font-AndikaTitle text-2xl text-white m-2 ">
           {" "}
           {songData?.title}
         </div>
         <div className="text-[#8792a2]">
           <div>
-            Singers: {songData?.artists?.map((item, i) => `${item.alias} ${ (i+1) < songData.artists.length ? ', ' : '' } `)}
+            <span className="italic"> Singers:</span> {songData?.artists?.map((item, i) => `${item.alias} ${ (i+1) < songData.artists.length ? ', ' : '' } `)}
           </div>
-          <div className="m-1">Genres: {songData?.genres?.primary}</div>
-          <div className="m-1">Release Date: {songData?.releasedate}</div>
+          <div className="m-1"> <span className="italic">Genres:</span> {songData?.genres?.primary}</div>
+          <div className="m-1"> <span className="italic">Release Date:</span> {songData?.releasedate}</div>
         </div>
       </div>
 
       {/* lyrics */}
-      <div className="m-1">
-        <h2 className="text-white text-xl mb-2">lyrics:</h2>
+      <div className="m-1 sticky top-9  w-[60%] overflow-hidden h-[73%]">
+        <h2 className="text-white text-2xl mb-2">lyrics:</h2>
         <div
-          className="float-right  px-6 py-10  text-lg text-[#9ba8bd] h-96 bg-[#212934] rounded-lg
+          className="px-6 py-10  text-xl text-[#b4c2d8] h-96 bg-[#344b6b] rounded-lg w-full
           overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-slate-400  scrollbar-thumb-rounded-full scrollbar-track-rounded-full "
         >
           <div className="text-center">
