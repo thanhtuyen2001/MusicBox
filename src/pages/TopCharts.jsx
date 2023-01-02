@@ -32,6 +32,10 @@ const TopCharts = () => {
 
   return (
     <div className="p-12">
+      {/* img */}
+      <div className="w-90%  h-80 flex rounded-lg mb-8  overflow-hidden   bg-[url('https://images.unsplash.com/photo-1492446190781-58ac4285911d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHN0YXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')]">
+        {/* <img className=" object-cover" src="https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3RhcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="" srcset="" /> */}
+      </div>
       <div className="flex gap-2 items-center font-AndikaTitle text-4xl ">#TopChart <BsFillPlayCircleFill className="text-pink-400"/></div>
       {/* list songs */}
       <div>
