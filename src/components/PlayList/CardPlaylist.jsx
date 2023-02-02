@@ -10,14 +10,14 @@ const CardPlaylist = ({ item }) => (
       <img
         src={item.src ? item.src : songCover}
         alt="playlist"
-        className="group-hover:scale-125 group-hover:opacity-70 transition-all"
+        className="group-hover:scale-125 h-44 w-44 group-hover:opacity-70 transition-all"
       />
       <BsFillPlayCircleFill className="hidden group-hover:inline-block transition-all absolute top-2/4 left-2/4 translate-x-[-50%] shadow-lg shadow-cyan-200 rounded-full  translate-y-[-50%] self-center text-4xl  " />
     </div>
     {/* title */}
     <div>
       <div
-        className="text-lg font-medium mt-1 w-[90%] inline-block truncate  cursor-pointer"
+        className="text-lg font-medium mt-1 w-[90%] inline-block truncate  cursor-pointer hover:underline"
         title={item.title}
       >
          <Link to="/songs">{item.title}</Link>

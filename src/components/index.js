@@ -14,6 +14,10 @@ import Footer from './Footer';
 import Playlist from './PlayList';
 import NewSong from './NewSong';
 import ListMV from './ListMV';
+import FavouriteSongs from './userFavourite/FavouriteSongs';
+import FavouritePodcast from './userFavourite/FavouritePodcast';
+import FavouriteAlbum from './userFavourite/FavouriteAlbum';
+import Podcast from '../pages/Podcast';
 export {
   TopPlay,
   Sidebar,
@@ -30,5 +34,9 @@ export {
   Footer,
   Playlist,
   NewSong,
-  ListMV
+  ListMV,
+  Podcast,
+  FavouriteSongs,
+  FavouritePodcast,
+  FavouriteAlbum,
 };

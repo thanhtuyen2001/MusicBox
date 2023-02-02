@@ -1,19 +1,18 @@
-import { logo_removebg } from "../assets";
+import { BsInstagram, BsFacebook, BsTwitter } from 'react-icons/bs';
+import { logo_removebg } from '../assets';
 
-import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
-
-const company = ["About", "Jobs", "For the Record"];
+const company = ['About', 'Jobs', 'For the Record'];
 const communities = [
-  "For Artists",
-  "Developers",
-  "Brands",
-  "Investors",
-  "Vendors",
+  'For Artists',
+  'Developers',
+  'Brands',
+  'Investors',
+  'Vendors',
 ];
-const usefulLinks = ["Helps", "Web Player", "Free Mobile App"];
+const usefulLinks = ['Helps', 'Web Player', 'Free Mobile App'];
 
 const Footer = () => (
-  <div className="flex justify-between p-4 mt-12 bg-[#1c245a] font-Roboto">
+  <div className="flex justify-between p-4 mt-12 bg-movingStar font-Roboto">
     <div className="flex gap-12">
       {/* logo */}
       <div>
@@ -24,7 +23,7 @@ const Footer = () => (
         <div className="text-lg text-slate-300 pr-10 font-Roboto font-medium mb-1 border-b ">COMPANY</div>
         <div className="fex flex-col gap-3 text-slate-400 mx-1 cursor-pointer ">
           {company.map((item, i) => (
-            <p key={i} className='my-1 hover:pl-2 hover:text-slate-100 hover:shadow-md  transition-all'>{item}</p>
+            <p key={i} className="my-1 hover:pl-2 hover:text-slate-100 hover:shadow-md  transition-all">{item}</p>
           ))}
         </div>
       </div>

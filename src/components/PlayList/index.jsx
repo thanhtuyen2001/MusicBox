@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import CardPlaylist from "./CardPlaylist";
+import CardPlaylist from './CardPlaylist';
 
-
-const Playlist = ({playlist}) => (
+const Playlist = ({ playlist }) => (
   <div className="w-full mt-4">
     {/* title */}
     <div className="flex justify-between items-center ">
@@ -13,7 +12,7 @@ const Playlist = ({playlist}) => (
       </div>
     </div>
     {/* card */}
-    <div className="flex justify-between gap-4 flex-wrap">
+    <div className="flex justify-between gap-2 flex-wrap">
       {playlist.playlist.map((item) => (
         <CardPlaylist item={item} />
       ))}

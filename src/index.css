@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Active Navigation Link */
 .active {
-  @apply text-cyan-500 shadow-lg;
+  @apply text-cyan-500 shadow-lg border-l-4 border-cyan-500;
 }
 .active svg {
   @apply text-cyan-500;

@@ -1,41 +1,42 @@
-import { useGetTopChartsQuery } from "../redux/services/ShazamCore";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import { BsFillCaretUpFill, BsFillCaretDownFill } from 'react-icons/bs';
+import { useGetTopChartsQuery } from '../redux/services/ShazamCore';
 
-import { songCover } from "../assets";
-import { Footer } from "../components";
-import { BsFillCaretUpFill, BsFillCaretDownFill } from "react-icons/bs";
+import { songCover } from '../assets';
+import { Footer } from '../components';
 
 const names = [
-  "Justine Bieber",
-  "Lady Gaga",
-  "Katy Perry",
-  "Rihanna",
-  "Taylor Swift",
-  "Justine Bieber",
-  "Lady Gaga",
-  "Katy Perry",
-  "Rihanna",
-  "Taylor Swift",
+  'Justine Bieber',
+  'Lady Gaga',
+  'Katy Perry',
+  'Rihanna',
+  'Taylor Swift',
+  'Justine Bieber',
+  'Lady Gaga',
+  'Katy Perry',
+  'Rihanna',
+  'Taylor Swift',
 ];
 const tag1 = (
-  <div className=" text-[10px] font-bold font-Roboto text-yellow-500">New</div>
+  <div className=" text-[12px] font-bold font-Roboto text-yellow-500">New</div>
 );
 const tag2 = (
-  <div className="flex gap-1 text-[10px] font-bold font-Roboto text-green-500">
+  <div className="flex gap-1 text-[12px] font-bold font-Roboto text-green-500">
     <BsFillCaretUpFill /> {Math.floor(Math.random() * 10)}
   </div>
 );
 const tag3 = (
-  <div className="flex gap-1 text-[10px] font-bold font-Roboto text-red-500">
+  <div className="flex gap-1 text-[12px] font-bold font-Roboto text-red-500">
     <BsFillCaretDownFill /> {Math.floor(Math.random() * 10)}
   </div>
 );
-const tag4 = (<div className=" text-[14px] font-bold font-Roboto" > - </div>)
+const tag4 = (<div className=" text-[14px] font-bold font-Roboto"> - </div>);
 const tags = [tag1, tag2, tag3, tag4];
 
 const TopArtists = () => {
   const { data } = useGetTopChartsQuery();
   const topArtists = data?.slice(0, 10);
-  console.log("top artists", topArtists);
+  console.log('top artists', topArtists);
 
   return (
     <div>
@@ -67,8 +68,10 @@ const TopArtists = () => {
 
                   {tags[Math.floor(Math.random() * 4)]}
 
-                  <div 
-                  className='font-bold'>{artist}</div>
+                  <div
+                    className="font-bold"
+                  >{artist}
+                  </div>
                 </div>
               ))}
             </div>
@@ -76,24 +79,24 @@ const TopArtists = () => {
         </div>
         {/* artists */}
         <div className="m-12">
-        <div className="flex gap-2 items-center font-AndikaTitle text-4xl mt-12 mb-4 ">
-          Artists
-        </div>
-        <div className="flex flex-wrap gap-4 justify-around">
-          {data?.map((artist, i) => (
-            <div key={i}>
-              <img
-                src={
-                  artist?.images?.background
-                    ? artist?.images?.background
-                    : songCover
-                }
-                alt="artist image"
-                className="w-60 rounded-full shadow-3xl "
-              />
-            </div>
-          ))}
-        </div>
+          <div className="flex gap-2 items-center font-AndikaTitle text-4xl mt-12 mb-4 ">
+            Artists
+          </div>
+          <div className="flex flex-wrap gap-4 justify-around">
+            {data?.map((artist, i) => (
+              <div key={i}>
+                <img
+                  src={
+                    artist?.images?.background
+                      ? artist?.images?.background
+                      : songCover
+                  }
+                  alt="artist image"
+                  className="w-60 rounded-full shadow-3xl "
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

@@ -5,9 +5,12 @@ module.exports = {
     extend: {
       colors: {
         black: '#191624',
+        primaryColor:'#1d375a'
       },
-      backgroundImage:{
-        'star':"url('https://images.unsplash.com/photo-1492446190781-58ac4285911d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHN0YXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')",
+      backgroundImage: {
+        star: "url('https://media0.giphy.com/media/xDBHj2WKmhEJIpzraR/200w.webp?cid=ecf05e47evypuyvy52xm8ma78p034uv429kwxxta0tctwg8q&rid=200w.webp&ct=g')",
+        movingStar: "url('https://media4.giphy.com/media/UYBDCJjwOd9Re/giphy.gif?cid=ecf05e47ool0mzlj9h3jk5zhab1rka2dwkjpdytmi0rat24y&rid=giphy.gif&ct=g')",
+        singer: "url('https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2luZ2VyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60')",
       },
       animation: {
         slideup: 'slideup 1s ease-in-out',
@@ -45,8 +48,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        'AndikaTitle': [ 'Andika', 'sans-serif' ],
-        'Roboto': ['Roboto', 'sans-serif'],
+        AndikaTitle: ['Andika', 'sans-serif'],
+        Roboto: ['Roboto', 'sans-serif'],
       }
     },
   },

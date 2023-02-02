@@ -59,14 +59,14 @@ const Searchbar = () => {
           <Setting />
         </div>} */}
         <div className="group">
-        <div className="text-center justify-center h-12 w-12 rounded-full bg-amber-400 overflow-hidden "
-        onClick={togglePopupSetting} >
-          <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" className="w-screen"   />
-        </div>
-        {/* popup */}
-        <div className="hidden group-hover:block absolute w-52 right-0 p-2 z-10 ">
-          <Setting />
-        </div></div>
+          <div className="text-center justify-center h-12 w-12 rounded-full bg-amber-400 overflow-hidden "
+            onClick={togglePopupSetting} >
+            <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" className="w-screen" />
+          </div>
+          {/* popup */}
+          <div className="hidden group-hover:block absolute w-52 right-0 p-2 z-10 ">
+            <Setting />
+          </div></div>
         {/* <div>username</div> */}
       </div>
     </div>

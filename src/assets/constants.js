@@ -40,6 +40,7 @@ export const podcasts = [
     title: "Maintain Productivity #01",
     speaker: "Yangzi",
     time: "20 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1643513473450-f2b4a0ee4fbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdGl2aXR5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -47,6 +48,7 @@ export const podcasts = [
     title: "Maintain Productivity #02",
     speaker: "shinigami",
     time: "15 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1610387849418-3ec12dc4b50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
@@ -54,6 +56,7 @@ export const podcasts = [
     title: "What Bitcoin, EHT, Etc?",
     speaker: "Levi",
     time: "8 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1610387849418-3ec12dc4b50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
@@ -61,6 +64,7 @@ export const podcasts = [
     title: "What Bitcoin, EHT, Etc?",
     speaker: "Levi",
     time: "8 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1551658827-3450f12257cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdGl2aXR5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -68,6 +72,7 @@ export const podcasts = [
     title: "Maintain Productivity #01",
     speaker: "Yangzi",
     time: "20 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1643513473450-f2b4a0ee4fbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdGl2aXR5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -75,6 +80,7 @@ export const podcasts = [
     title: "Maintain Productivity #02",
     speaker: "shinigami",
     time: "15 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1610387849418-3ec12dc4b50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
@@ -82,6 +88,7 @@ export const podcasts = [
     title: "What Bitcoin, EHT, Etc?",
     speaker: "Levi",
     time: "8 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1610387849418-3ec12dc4b50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
@@ -111,6 +118,7 @@ export const podcasts = [
     title: "What Bitcoin, EHT, Etc?",
     speaker: "Levi",
     time: "8 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1610387849418-3ec12dc4b50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
@@ -118,6 +126,7 @@ export const podcasts = [
     title: "What Bitcoin, EHT, Etc?",
     speaker: "Levi",
     time: "8 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
   {
     img: "https://images.unsplash.com/photo-1551658827-3450f12257cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdGl2aXR5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -146,6 +155,7 @@ export const podcasts = [
     title: "What Bitcoin, EHT, Etc?",
     speaker: "Levi",
     time: "8 Min",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odio assumenda illum aliquid enim maxime velit architecto blanditiis, nulla in.",
   },
 
 ];

@@ -9,6 +9,7 @@ import Login from './Login';
 import MV from './MV';
 import Songs from './Songs';
 import User from './User';
+import Podcast from './Podcast';
 export {
   Discover,
   Search,
@@ -20,5 +21,6 @@ export {
   Login,
   MV,
   Songs,
-  User
+  User,
+  Podcast,
 };

@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
 
 import {
   Error,
@@ -10,11 +10,11 @@ import {
   Playlist,
   NewSong,
   ListMV,
-} from "../components";
-import { genres, playlists } from "../assets/constants";
+} from '../components';
+import { genres, playlists } from '../assets/constants';
 
-import { useGetTopChartsQuery } from "../redux/services/ShazamCore";
-import Slider from "../components/Slider";
+import { useGetTopChartsQuery } from '../redux/services/ShazamCore';
+import Slider from '../components/Slider';
 
 const Discover = () => {
   // const dispatch = useDispatch();
@@ -29,8 +29,9 @@ const Discover = () => {
   // if (error) {
   //   return <Error />;
   // }
-
-  return (
+  
+  
+    return (
     <div className="bg-[#1d375a]">
       {/* content */}
       <div className="flex flex-row relative">
@@ -66,6 +67,6 @@ const Discover = () => {
         <Footer />
       </div>
     </div>
-  );
-};
+  );}
+;
 export default Discover;

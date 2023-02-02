@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { useDispatch, useSelector } from "react-redux";
-import { useGetTopChartsQuery } from "../redux/services/ShazamCore";
+import { useDispatch, useSelector } from 'react-redux';
+import { useGetTopChartsQuery } from '../redux/services/ShazamCore';
 
-import { SongCard, Loader, Error } from "../components";
-import { genres } from "../assets/constants";
+import { SongCard, Loader, Error } from '../components';
+import { genres } from '../assets/constants';
 
 const Songs = () => {
   const dispatch = useDispatch();
@@ -24,10 +24,10 @@ const Songs = () => {
     <div className="p-8">
       {/* genres  */}
       <div className="flex items-center gap-4 px-4 py-2">
-        <p className="text-2xl font-bold ">Genes </p>
+        <p className="text-2xl font-bold ">Genres </p>
         <select
           className="text-gray-700 block px-4 py-1 text-sm rounded-md"
-          onChange={() => {}}
+          onChange={() => { }}
           value=""
         >
           {genres.map((genre) => (
