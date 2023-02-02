@@ -32,7 +32,7 @@ const Discover = () => {
   
   
     return (
-    <div className="bg-[#1d375a]">
+    <div className="bg-[#1d375a] dark:bg-white/95">
       {/* content */}
       <div className="flex flex-row relative">
         {/* scroll */}
@@ -41,7 +41,7 @@ const Discover = () => {
           <Slider className="bg-black" />
 
           {/* playlist  */}
-          <div className="w-full text-white px-4 py-4 ">
+          <div className="w-full text-white dark:text-black px-4 py-4 ">
             {playlists.map((playlist, i) => (
               <Playlist key={i} playlist={playlist} />
             ))}

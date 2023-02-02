@@ -18,6 +18,9 @@ import FavouriteSongs from './userFavourite/FavouriteSongs';
 import FavouritePodcast from './userFavourite/FavouritePodcast';
 import FavouriteAlbum from './userFavourite/FavouriteAlbum';
 import Podcast from '../pages/Podcast';
+
+import SingerAlbum from './userFavourite/SingerAlbum';
+
 export {
   TopPlay,
   Sidebar,
@@ -39,4 +42,6 @@ export {
   FavouriteSongs,
   FavouritePodcast,
   FavouriteAlbum,
+
+  SingerAlbum,
 };

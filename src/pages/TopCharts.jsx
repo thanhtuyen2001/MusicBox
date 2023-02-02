@@ -38,7 +38,7 @@ const TopCharts = () => {
       {/* list songs */}
       <div>
         {data.map((song, i) => (
-          <div key={i} className="flex items-center justify-between  gap-4 hover:bg-[#344b6b] m-4 p-2 rounded-md">
+          <div key={i} className="flex items-center justify-between  gap-4 hover:bg-[#344b6b] dark:hover:bg-slate-200 m-4 p-2 rounded-md">
             <div className="flex justify-center items-center gap-2 ">
               <div className={`font-Roboto stroke text-[3em]  ${i === 0 ? 'strokeTop1' : i === 1 ? 'strokeTop2' : i === 2 ? 'strokeTop3' : ''} `}> {i < 9 ? `0${i + 1}` : `${i + 1}`} - 
               </div>
@@ -52,7 +52,7 @@ const TopCharts = () => {
               </div>
 
               <div className="ml-4">
-                <p className="text-white text-xl font-semibold ">{song.title}</p>
+                <p className="text-white dark:text-black text-xl font-semibold ">{song.title}</p>
                 <div className="text-[#8792a2]">{song.subtitle}</div>
               </div>
             </div>

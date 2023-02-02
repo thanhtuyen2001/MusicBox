@@ -11,7 +11,7 @@ const NavLinks = ({ handleClick }) => (
     {
       links.map((item) => (
         <NavLink
-          className="flex items-center text-2xl p-4 hover:bg-[#3f5472]"
+          className="flex items-center text-2xl p-4 hover:bg-[#3f5472] dark:hover:bg-teal-300"
           key={item.name}
           to={item.to}
           onClick={() => handleClick && handleClick()}
@@ -27,7 +27,7 @@ const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="text-white">
+    <div className="text-white dark:text-black dark:shadow-lg z-10">
       <div className="sidebar w-64 ">
         <img src={logo} alt="logo " className="" />
         <NavLinks /> 
@@ -46,7 +46,7 @@ const Sidebar = () => {
         <NavLinks handleClick={() => setMobileMenuOpen(false)}/> 
         {
           mobileMenuOpen &&
-          (<RiCloseLine className="absolute top-2 right-2 w-6 h-6 mr-2 text-white" onClick={() => setMobileMenuOpen(false)}/>) 
+          (<RiCloseLine className="absolute top-2 right-2 w-6 h-6 mr-2 text-white dark:text-black" onClick={() => setMobileMenuOpen(false)}/>) 
         }
       </div>
       

@@ -41,13 +41,13 @@ const TopArtists = () => {
   return (
     <div>
       <div className="">
-        <div className="w-full px-12 py-8 bg-[#344b6b]">
+        <div className="w-full px-12 py-8 bg-[#344b6b] dark:bg-[#FFCEF3]">
           {/* title */}
           <div className="flex gap-2 items-center font-AndikaTitle text-4xl my-4">
             Trending Artists
           </div>
           {/* rank */}
-          <div className="flex gap-12">
+          <div className="flex gap-12 ">
             {/* img */}
             <div className="w-80">
               <img
@@ -61,10 +61,10 @@ const TopArtists = () => {
               />
             </div>
             {/* number */}
-            <div className="flex flex-col gap-4 flex-wrap h-80 content-start justify-start">
+            <div className="flex flex-col gap-4 flex-wrap h-80 content-start justify-start mr-4 ">
               {names.map((artist, i) => (
-                <div className="flex gap-3 h-12 w-80 p-2  mx-16 items-center justify-start hover:bg-[#234069] rounded-md">
-                  <div className="text-[#9faabc] text-lg font-Roboto ">{i + 1}</div>
+                <div className="flex gap-3 h-12 w-80 p-2  mx-16 items-center justify-start hover:bg-[#234069] dark:hover:bg-[#FFE2E2] rounded-md">
+                  <div className="text-[#9faabc] text-lg font-Roboto dark:text-black font-bold">{i + 1}</div>
 
                   {tags[Math.floor(Math.random() * 4)]}
 

@@ -12,7 +12,7 @@ const CardPlaylist = ({ item }) => (
         alt="playlist"
         className="group-hover:scale-125 h-44 w-44 group-hover:opacity-70 transition-all"
       />
-      <BsFillPlayCircleFill className="hidden group-hover:inline-block transition-all absolute top-2/4 left-2/4 translate-x-[-50%] shadow-lg shadow-cyan-200 rounded-full  translate-y-[-50%] self-center text-4xl  " />
+      <BsFillPlayCircleFill className="hidden group-hover:inline-block transition-all absolute top-2/4 left-2/4 translate-x-[-50%] shadow-lg shadow-cyan-200 rounded-full  translate-y-[-50%] self-center text-4xl  dark:text-white" />
     </div>
     {/* title */}
     <div>

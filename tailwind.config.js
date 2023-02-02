@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -56,5 +57,6 @@ module.exports = {
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),
     require('@tailwindcss/line-clamp'),
+    require('flowbite/plugin'),
   ],
 };

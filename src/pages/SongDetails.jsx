@@ -18,14 +18,14 @@ const SongDetails = () => {
   return (
     <div className=" pageTheme flex p-8 h-screen  justify-around relative">
       {/* info */}
-      <div className="sticky top-8  text-white  text-center max-w-[30%] h-fit ">
+      <div className="sticky top-8 text-white  text-center max-w-[30%] h-fit text-xl">
         <DetailsHeader
           artistId=""
           songData={songData}
           customeStyle="rounded-2xl w-72"
           className="w-72"
         />
-        <div className="font-AndikaTitle text-2xl text-white m-2 ">
+        <div className="font-AndikaTitle text-2xl text-white dark:text-black m-2 ">
           {" "}
           {songData?.title}
         </div>
@@ -42,7 +42,7 @@ const SongDetails = () => {
       <div className="m-1 sticky top-9  w-[60%] overflow-hidden h-[73%]">
         <h2 className="text-white text-2xl mb-2">lyrics:</h2>
         <div
-          className="px-6 py-10  text-xl text-[#b4c2d8] h-96 bg-[#344b6b] rounded-lg w-full
+          className="px-6 py-10  text-xl text-[#b4c2d8] dark:text-slate-700 h-96 bg-[#344b6b] dark:bg-slate-300 font-bold rounded-lg w-full
           overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-slate-400  scrollbar-thumb-rounded-full scrollbar-track-rounded-full "
         >
           <div className="text-center">

@@ -4,8 +4,9 @@ import { useGetTopChartsQuery } from '../redux/services/ShazamCore';
 
 import { playlists } from '../assets/constants';
 import { songCover } from '../assets/index'
-import { BsFillPlusSquareFill } from 'react-icons/bs';
+import { BsFillPlusSquareFill, BsFillPlayCircleFill } from 'react-icons/bs';
 import { FavouriteSongs, FavouriteAlbum, FavouritePodcast } from '../components';
+import MVCard from '../components/ListMV/MVCard';
 
 const User = () => {
   const { data } = useGetTopChartsQuery();
@@ -22,7 +23,7 @@ const User = () => {
     <div className='px-6 py-4'>
       {/* favorite artist */}
       <div>
-        <p className="flex gap-8 mt-6 mb-4 font-AndikaTitle text-2xl " >YOUR FAVORITE ARTIST</p>
+        <p className="flex gap-4 mt-6 mb-4 font-AndikaTitle text-2xl items-center" >YOUR FAVORITE ARTIST <BsFillPlayCircleFill className="text-pink-400"/> </p>
 
         <div className="flex flex-wrap gap-4 justify-start">
           {favouriteArtist?.map((artist, i) => (
@@ -51,7 +52,7 @@ const User = () => {
 
       {/* playlist */}
       <div>
-        <div className={headerStyle}>YOUR FAVOURITE PLAYLIST </div>
+        <div className={headerStyle}>YOUR FAVOURITE PLAYLIST<BsFillPlayCircleFill className="text-pink-400"/> </div>
         <div className='flex gap-6'>
           {playlists[0].playlist?.map((playlist, i) => (
             <div className='flex flex-col text-center'>
@@ -80,19 +81,19 @@ const User = () => {
       <div>
         <div className='flex gap-8 mt-12  p-2 relative'>
           <div className=' border-solid hover:text-teal-500 px-3 relative rounded-lg'>
-            <p onClick={() => toggleTab(1)} className="cursor-pointer transition-all duration-150">SONGS</p>
+            <p onClick={() => toggleTab(1)} className="cursor-pointer  font-AndikaTitle transition-all duration-150">SONGS</p>
             {(toggleState === 1) ? <hr className='absolute transition-all duration-300 rounded-lg border border-solid border-b-4 border-teal-400 w-full bottom-[-0.5rem] z-10 left-0' /> : <></>}
           </div>
           <div className=' border-solid  px-3 hover:text-teal-500 relative'  >
-            <p onClick={() => toggleTab(2)}  className="cursor-pointer">PODCAST</p>
+            <p onClick={() => toggleTab(2)}  className="cursor-pointer  font-AndikaTitle">PODCAST</p>
             {(toggleState === 2) ? <hr className='absolute border border-solid border-b-4 border-teal-400 w-full bottom-[-0.5rem] z-10 left-0' /> : <></>}
           </div>
           <div className=' border-solid hover:text-teal-500 px-3 relative'>
-            <p onClick={() => toggleTab(3)} className="cursor-pointer">ALBUM</p>
+            <p onClick={() => toggleTab(3)} className="cursor-pointer  font-AndikaTitle">ALBUM</p>
             {(toggleState === 3) ? <hr className='absolute border border-solid border-b-4 border-teal-400 w-full bottom-[-0.5rem] z-10 left-0' /> : <></>}
           </div>
           <div className=' border-solid hover:text-teal-500 px-3 relative'>
-            <p onClick={() => toggleTab(4)} className="cursor-pointer">MV</p>
+            <p onClick={() => toggleTab(4)} className="cursor-pointer  font-AndikaTitle">MV</p>
             {(toggleState === 4) ? <hr className='absolute border border-solid border-b-4 border-teal-400 w-full bottom-[-0.5rem] z-10 left-0' /> : <></>}
           </div>
           <hr className='border border-white w-full absolute bottom-0 rounded-lg' />
@@ -103,6 +104,14 @@ const User = () => {
         {toggleState === 1 ? <FavouriteSongs /> : <></>}
         {toggleState === 2 ? <FavouritePodcast /> : <></>}
         {toggleState === 3 ? <FavouriteAlbum /> : <></>}
+        {toggleState === 4 ? 
+          <div className='flex gap-4 pt-8 px-8'> 
+            <MVCard />
+            <MVCard />
+            <MVCard />
+            </div>
+          : <></>
+        }
 
       </div>
     </div>
@@ -111,4 +120,4 @@ const User = () => {
 
 export default User;
 
-const headerStyle = "flex gap-8 mt-12 mb-6 font-AndikaTitle text-2xl ";
+const headerStyle = "flex gap-4 mt-6 mb-4 font-AndikaTitle text-2xl items-center pt-12 ";

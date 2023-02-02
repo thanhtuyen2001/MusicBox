@@ -70,13 +70,13 @@ const TopPlay = () => {
       {/* top chart */}
       <div className="mb-6">
         <div  className="mb-3">
-          <p className="text-white text-2xl">TOP CHART ✨</p>
+          <p className="text-white dark:text-black text-2xl">TOP CHART ✨</p>
           <Link to="/top-charts" className="text-[#8792a2] mb-4">
             see more
           </Link>
         </div>
         {/* song */}
-        <div className="text-white">
+        <div className="text-white dark:text-black">
           {
             topPlays?.map((song, i) => (
               <TopChartCard
@@ -134,5 +134,5 @@ const TopPlay = () => {
 
 export default TopPlay; 
 
-const titleStyle = "text-white text-2xl";
+const titleStyle = "text-white dark:text-black text-2xl";
 const sndTitle = "text-[#8792a2] ";

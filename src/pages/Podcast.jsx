@@ -58,7 +58,7 @@ const Podcast = () => {
                                         <img src={item.img} alt="" />
                                     </div>
                                     <div>
-                                        <p className='group-hover:text-slate-700 text-white'>{item.title}</p>
+                                        <p className='group-hover:text-slate-700 text-white dark:text-black'>{item.title}</p>
                                         <p>{item.speaker}</p>
                                     </div>
                                 </div>

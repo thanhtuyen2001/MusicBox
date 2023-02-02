@@ -9,7 +9,7 @@ const FavouritePodcast = () => {
   return (
     <div>
         {favouraitePodcasts.map((podcast, i) => (
-          <div key={i} className="flex items-center justify-between  gap-4 hover:bg-[#344b6b] m-4 p-2 rounded-md">
+          <div key={i} className="flex items-center justify-between  gap-4 hover:bg-[#344b6b] dark:hover:bg-slate-300  m-4 p-2 rounded-md">
             <div className="flex justify-center items-center gap-2 ">
               <div><BsPlay size="25px"/></div>
               <div className="max-w-[70px] max-h-[70px] rounded-lg overflow-hidden ml-2">
@@ -22,7 +22,7 @@ const FavouritePodcast = () => {
               </div>
 
               <div className="ml-4">
-                <p className="text-white text-xl font-semibold ">{podcast.title + " | " + podcast.topic }</p>
+                <p className="text-white dark:text-black text-xl font-semibold ">{podcast.title + " | " + podcast.topic }</p>
                 <div className="text-[#8792a2]">{podcast.description}</div>
               </div>
             </div>

@@ -5,7 +5,7 @@ const NewSongCard = ( {item} ) =>{
     console.log('item receive:', item);
     return (
     
-  <div className="flex gap-2 items-center  w-1/3 p-1 rounded-lg  bg-[#344b6b]">
+  <div className="flex gap-2 items-center  w-1/3 p-1 rounded-lg  bg-[#344b6b] dark:bg-slate-200">
     {/* img */}
     <div className="">
       <img src={item.src ? item.src : songCover} alt="" className="w-32 rounded-lg" />

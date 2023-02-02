@@ -7,13 +7,13 @@ const noti_content = [
 
 const Notification = () => {
   return (
-    <div className="bg-[#344b6b] rounded-md p-2">
+    <div className="bg-[#344b6b] dark:bg-white dark:border-[2px] rounded-md p-2">
       { noti_content.map((item, i)=> (
-        <div className="border-b border-[#8792a2] mb-2" key={i}>
+        <div className="border-b border-[#8792a2] dark:text-black mb-2" key={i}>
             {/* message */}
             <div>{item.mess}</div>
             {/* time */}
-            <div className="text-[#8792a2]">{item.time}</div>
+            <div className="text-[#8792a2] dark:text-black/30">{item.time}</div>
         </div>
       )) }
      

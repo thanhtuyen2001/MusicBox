@@ -65,20 +65,20 @@
 
 @layer base{
   h1{
-    @apply text-white font-semibold font-Roboto;
+    @apply text-white font-semibold font-Roboto dark:text-black;
   }
   h2{
-    @apply text-white font-Roboto;
+    @apply text-white font-Roboto dark:text-black;
   }
 }
 
 /* style component  */
 @layer components {
   .pageTheme {
-    @apply bg-[#1d375a] h-screen text-white;
+    @apply bg-[#1d375a] dark:bg-white h-screen text-white dark:text-black;
   }
   .sidebar{
-    @apply h-screen hidden md:flex flex-col w-[24px] bg-[#294162]
+    @apply h-screen hidden md:flex flex-col w-[24px] bg-[#294162] dark:bg-white
      shadow-md;
   }
   .music-player{
@@ -93,7 +93,7 @@
     @apply border
              p-4 m-2 shadow-blue-100 
              animate-slideup
-            rounded-md hover:bg-slate-500
+            rounded-md hover:bg-slate-500 dark:hover:bg-teal-200
             transition-all w-56
             hover:border-t-indigo-400 hover:shadow-2xl 
             cursor-pointer;

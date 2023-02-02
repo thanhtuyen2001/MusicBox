@@ -57,6 +57,6 @@ const Footer = () => (
 
 export default Footer;
 
-const styleTitle = 'text-lg pr-10 font-Roboto font-medium mb-1 border-b';
+const styleTitle = 'text-lg text-slate-300 pr-10 font-Roboto font-medium mb-1 border-b';
 const styleSndTitle = 'fex flex-col gap-3 text-slate-400 mx-1 cursor-pointer ';
 const styleLink = 'py-1 hover:pl-2 hover:text-slate-100  transition-all hover:shadow-lg';

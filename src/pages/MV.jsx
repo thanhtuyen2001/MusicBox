@@ -16,7 +16,7 @@ const MV = () => {
             {/* mv name , singer*/}
             <div className='text-3xl'>Viva la Vida</div>
             <div className='text-lg text-slate-300'>Coldplay </div>
-            <div className='bg-[#344b6b] p-4 rounded-lg'>
+            <div className='bg-[#344b6b] dark:bg-slate-200  p-4 rounded-lg'>
             "Viva la Vida" is a song by British rock band Coldplay. It was written by all members of the band for their fourth album, Viva la Vida or Death and All His Friends (2008). The lyrics to the song contain historical and Christian references, and the track is built around a looping string section in unison with a digitally processed piano, with other layers gradually being added as the song builds.
             </div>
         </div>
