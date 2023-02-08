@@ -5,7 +5,7 @@ const NewSongCard = ( {item} ) =>{
     console.log('item receive:', item);
     return (
     
-  <div className="flex gap-2 items-center  w-1/3 p-1 rounded-lg  bg-[#344b6b] dark:bg-slate-200">
+  <div className="flex gap-2 items-center w-fit p-2 rounded-lg bg-[#344b6b] dark:bg-slate-200">
     {/* img */}
     <div className="">
       <img src={item.src ? item.src : songCover} alt="" className="w-32 rounded-lg" />
@@ -13,7 +13,7 @@ const NewSongCard = ( {item} ) =>{
     {/* ifo */}
     <div className="flex flex-col gap-6 justify-between">
       {/* title */}
-      <div className="flex flex-col">
+      <div className="flex flex-col md:flex-wrap">
         <div className="text-lg font-medium mt-1 w-[90%] inline-block truncate  cursor-pointer">
          {item.name}
         </div>
@@ -22,9 +22,9 @@ const NewSongCard = ( {item} ) =>{
         </div>
       </div>
       {/* subInfo */}
-      <div className="flex justify-between items-center gap-8 ">
+      <div className="flex  justify-between items-center gap-8  ">
         {/* rank */}
-        <div className="stroke   text-[2em]">#{item.rank}</div>
+        <div className="stroke  text-[2em]">#{item.rank}</div>
         {/* date */}
         <div className="text-sm">{item.time}</div>
       </div>

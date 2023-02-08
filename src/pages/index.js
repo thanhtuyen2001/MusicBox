@@ -4,7 +4,7 @@ import ArtistDetails from './ArtistDetails';
 import SongDetails from './SongDetails';
 import Search from './Search';
 import TopCharts from './TopCharts';
-import AroundYou from './AroundYou';
+import AroundYou from './NewsPage';
 import Login from './Login';
 import MV from './MV';
 import Songs from './Songs';

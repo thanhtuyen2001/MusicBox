@@ -1,16 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { logo_removebg, logo } from '../assets'
+import { logo_removebg, logo, headphoneRemovebg } from '../assets'
 const Signup = () => {
     return (
         <div className='p-2'>
-            {/* logo */}
-            <div className='mx-auto w-80'>
-                <img src={logo_removebg} alt="logo"  />
-            </div>
+            
             {/* form */}
             <form action="" className='max-w-[400px] w-full mx-auto bg-gray-900 p-8 rounded-lg' autocomplete="off">
+                {/* logo */}
+            <div className='mx-auto w-12'>
+                <img src={headphoneRemovebg} alt="logo" className='w-12 h-12 mx-auto'  />
+            </div>
                 <p className='text-4xl dark:text-white font-bold text-center '>Create New Account</p>
                 <div className='flex my-8 text-gray-400 '>
                     <p> Already A Member? </p><Link to='/signin' className='text-cyan-500 ml-2 cursor-pointer hover:text-cyan-300'> Log In</Link>

@@ -36,7 +36,7 @@ const Discover = () => {
       {/* content */}
       <div className="flex flex-row relative">
         {/* scroll */}
-        <div className="flex flex-col p-2 w-[80%] ">
+        <div className="flex flex-col p-2 w-full md:w-[80%] ">
           {/* slider  */}
           <Slider className="bg-black" />
 
@@ -57,7 +57,7 @@ const Discover = () => {
         </div>
 
         {/*pin:  top play */}
-        <div className=" md:sticky top-2 right-[10px] md:max-w-[25%] h-fit ">
+        <div className="hidden md:block md:sticky top-2 right-[10px] md:max-w-[25%] h-fit ">
           <TopPlay />
         </div>
       </div>

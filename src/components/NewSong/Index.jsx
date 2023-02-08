@@ -15,7 +15,7 @@ const NewSong = () => (
         show all
       </div>
     </div>
-    <div className="flex gap-4">
+    <div className="flex gap-4  justify-start md:justify-between">
       {
         lstNewSongs.map((item, i) => {
           console.log('item:', item)

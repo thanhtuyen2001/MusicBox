@@ -12,7 +12,7 @@ const Playlist = ({ playlist }) => (
       </div>
     </div>
     {/* card */}
-    <div className="flex justify-between gap-2 flex-wrap">
+    <div className="flex justify-between gap-2 flex-wrap overflow-hidden">
       {playlist.playlist.map((item) => (
         <CardPlaylist item={item} />
       ))}

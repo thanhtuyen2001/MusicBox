@@ -11,12 +11,12 @@ const NavLinks = ({ handleClick }) => (
     {
       links.map((item) => (
         <NavLink
-          className="flex items-center text-2xl p-4 hover:bg-[#3f5472] dark:hover:bg-teal-300"
+          className="flex items-center text-2xl p-4 hover:bg-[#3f5472] dark:hover:bg-teal-300 dark:bg-white dark:shadow"
           key={item.name}
           to={item.to}
           onClick={() => handleClick && handleClick()}
         >
-          <item.icon className="mr-2"/>
+          <item.icon className="mr-2" />
           {item.name}
         </NavLink>
       ))
@@ -27,32 +27,29 @@ const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="text-white dark:text-black dark:shadow-lg z-10">
+    <div className="text-white dark:text-black dark:shadow-lg z-10 ">
       <div className="sidebar w-64 ">
         <img src={logo} alt="logo " className="" />
-        <NavLinks /> 
+        <NavLinks />
       </div>
 
       {/* mobile sidebar  */}
-      <div className="absolute md:hidden block top-4 left-3">
+      <div className="absolute md:hidden block top-4 left-3 ">
         {
           !mobileMenuOpen &&
-          (<HiOutlineMenu className="w-6 h-6 mr-2" onClick={() => setMobileMenuOpen(true)}/>)
+          (<HiOutlineMenu className="w-6 h-6 mr-2 " onClick={() => setMobileMenuOpen(true)} />)
         }
       </div>
-      <div className={`absolute top-0 h-screen w-60 bg-slate-400 backdrop-blur-lg z-10 md:hidden smooth-transition 
+      <div
+        className={`absolute top-0 h-screen w-60 bg-slate-400 dark:bg-white dark:shadow backdrop-blur-lg z-10 md:hidden smooth-transition 
       ${mobileMenuOpen ? 'left-0' : '-left-full'}`}>
         <img src={logo} alt="logo " className="" />
-        <NavLinks handleClick={() => setMobileMenuOpen(false)}/> 
+        <NavLinks handleClick={() => setMobileMenuOpen(false)} />
         {
           mobileMenuOpen &&
-          (<RiCloseLine className="absolute top-2 right-2 w-6 h-6 mr-2 text-white dark:text-black" onClick={() => setMobileMenuOpen(false)}/>) 
+          (<RiCloseLine className="absolute top-2 right-2 w-6 h-6 mr-2 text-white " onClick={() => setMobileMenuOpen(false)} />)
         }
       </div>
-      
-      {/* <div className="sm:hidden flex flex-start ">
-        <HiOutlineMenu/>
-      </div> */}
     </div>
   )
 }

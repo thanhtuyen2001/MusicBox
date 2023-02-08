@@ -18,6 +18,7 @@ import FavouriteSongs from './userFavourite/FavouriteSongs';
 import FavouritePodcast from './userFavourite/FavouritePodcast';
 import FavouriteAlbum from './userFavourite/FavouriteAlbum';
 import Podcast from '../pages/Podcast';
+import NewsCard from './NewsCard';
 
 import SingerAlbum from './userFavourite/SingerAlbum';
 
@@ -42,6 +43,7 @@ export {
   FavouriteSongs,
   FavouritePodcast,
   FavouriteAlbum,
+  NewsCard,
 
   SingerAlbum,
 };

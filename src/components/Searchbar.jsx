@@ -31,31 +31,34 @@ const Searchbar = () => {
     <div className="flex  justify-between items-center bg-[#1d375a] dark:bg-white h-14 p-6 border-b border-[#172c48]">
       <div className="flex gap-1 items-center">
         {/* arrow */}
-        <BiLeftArrowAlt className={styleIcon } />
-        <BiRightArrowAlt className={styleIcon} />
+        <div className="flex basis-[1/7]">
+
+          <BiLeftArrowAlt className={styleIcon} />
+          <BiRightArrowAlt className={styleIcon} />
+        </div>
 
         {/* search bar */}
         <div
           className="flex justify-center items-center px-4  mx-4 gap-1  rounded-full h-10 
-                       bg-[#344b6b] dark:border dark:bg-white"
+                       bg-[#344b6b] dark:border dark:bg-white basic-[4/7]" 
         >
           <input
             type="text"
             placeholder="Search for song or artist "
-            className="outline-none border-none w-64 bg-transparent focus:border-none focus:outline-hidden text-white "
+            className="outline-none border-none w-64 bg-transparent focus:border-none focus:outline-hidden text-white dark:text-black"
           />
           <BiSearch className="text-2xl text-[#8792a2] " />
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-2 relative">
+      <div className="flex justify-center items-center gap-2 relative basic-[2/7]">
         {
           isDarkMode ? (
 
             <BiSun className="text-3xl text-[#FEFCF3] dark:text-[#323232] hover:bg-[#344b6b] dark:hover:bg-slate-400 m-2 rounded-full hover:text-yellow-300" onClick={() => toggleDarkMode(!isDarkMode)} />
           ) : (
 
-            <BiMoon className="text-3xl text-[#FEFCF3] dark:text-[#323232] hover:bg-[#344b6b] m-2 rounded-full hover:text-yellow-200" onClick={() => toggleDarkMode(!isDarkMode)}/>
+            <BiMoon className="text-3xl text-[#FEFCF3] dark:text-[#323232] hover:bg-[#344b6b] m-2 rounded-full hover:text-yellow-200" onClick={() => toggleDarkMode(!isDarkMode)} />
           )
         }
         <BiBell className={styleIcon} onClick={togglePopup} />
@@ -65,9 +68,7 @@ const Searchbar = () => {
             <Notification />
           </div>
         )}
-        {/* { isOpenUserSetting && <div className="absolute w-52 right-2 top-16 z-10 ">
-          <Setting />
-        </div>} */}
+       
         <div className="group">
           <div className="text-center justify-center h-12 w-12 rounded-full bg-amber-400 overflow-hidden "
             onClick={togglePopupSetting} >

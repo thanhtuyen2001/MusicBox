@@ -52,7 +52,7 @@ const ArtistDetails = () => {
                   </div>
 
                   <div className="ml-4">
-                    <p className="text-white dark:text-black text-xl font-semibold ">{song.title}</p>
+                    <p className="text-white dark:text-black text-xl font-semibold line-clamp-2">{song.title}</p>
                     <div className="text-[#8792a2]">{song.subtitle}</div>
                   </div>
                 </div>

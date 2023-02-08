@@ -21,7 +21,7 @@ const TopChartCard = ({ song, i, isPlaying, activeSong, handlePauseClick, handle
     <BsMusicNoteBeamed/>
     <img className="w-12 h-12 rounded-xl" src={song?.images?.coverart ? song?.images?.coverart : songCover} alt={song?.title} />
 
-    <div>
+    <div className="max-w-[50%] line-clamp-2">
       <Link to={`songs/${song.key}`}>
         {console.log("song:<", song)}
         <p >{song?.title}</p>

@@ -7,7 +7,7 @@ import { ArtistDetails, TopArtists, AroundYou, Discover, Search, SongDetails, To
 import { FavouriteSongs, FavouritePodcast, FavouriteAlbum } from './components';
 
 const Layout = () => (
-  <div className="pageTheme ">
+  <div className="pageTheme overflow-y-auto w-screen">
     <Routes>
       <Route path="signup" element={<Signup />} />
       <Route path="signin" element={<Login />} />
