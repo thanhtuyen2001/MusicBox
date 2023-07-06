@@ -28,10 +28,10 @@ const Searchbar = () => {
   };
 
   return (
-    <div className="flex  justify-between items-center bg-[#1d375a] dark:bg-white h-14 p-6 border-b border-[#172c48]">
+    <div className="flex w-full justify-between items-center bg-[#1d375a] dark:bg-white h-14 p-6 border-b border-[#172c48]">
       <div className="flex gap-1 items-center">
         {/* arrow */}
-        <div className="flex basis-[1/7]">
+        <div className="hidden md:flex basis-[1/7]">
 
           <BiLeftArrowAlt className={styleIcon} />
           <BiRightArrowAlt className={styleIcon} />
@@ -39,16 +39,17 @@ const Searchbar = () => {
 
         {/* search bar */}
         <div
-          className="flex justify-center items-center px-4  mx-4 gap-1  rounded-full h-10 
+          className="flex justify-center items-center px-4  mx-4 gap-1  rounded-full h-7 md:h-10 
                        bg-[#344b6b] dark:border dark:bg-white basic-[4/7]" 
         >
           <input
             type="text"
             placeholder="Search for song or artist "
-            className="outline-none border-none w-64 bg-transparent focus:border-none focus:outline-hidden text-white dark:text-black"
+            className="outline-none border-none w-10 md:w-64 bg-transparent focus:border-none focus:outline-hidden text-white dark:text-black"
           />
           <BiSearch className="text-2xl text-[#8792a2] " />
         </div>
+        
       </div>
 
       <div className="flex justify-center items-center gap-2 relative basic-[2/7]">

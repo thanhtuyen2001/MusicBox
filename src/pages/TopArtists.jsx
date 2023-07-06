@@ -41,15 +41,15 @@ const TopArtists = () => {
   return (
     <div>
       <div className="">
-        <div className="w-full px-12 py-8 bg-[#344b6b] dark:bg-[#FFCEF3]">
+        <div className="px:8 md:px-12 py-8 bg-[#344b6b] dark:bg-[#FFCEF3]">
           {/* title */}
           <div className="flex gap-2 items-center font-AndikaTitle text-4xl my-4">
             Trending Artists
           </div>
           {/* rank */}
-          <div className="flex gap-12 ">
+          <div className="flex gap-12  ">
             {/* img */}
-            <div className="w-80">
+            <div className="w-80 hidden md:block">
               <img
                 src={
                   data[0]?.images?.background
@@ -57,13 +57,13 @@ const TopArtists = () => {
                     : songCover
                 }
                 alt="Artist Image"
-                className="rounded-md"
+                className=" rounded-md"
               />
             </div>
             {/* number */}
-            <div className="flex flex-col gap-4 flex-wrap h-80 content-start justify-start mr-4 ">
+            <div className="flex flex-col gap-4 flex-wrap h-80 content-start justify-start md:mr-4 ">
               {names.map((artist, i) => (
-                <div className="flex gap-3 h-12 w-80 p-2  mx-16 items-center justify-start hover:bg-[#234069] dark:hover:bg-[#FFE2E2] rounded-md">
+                <div className="flex gap-3 h-12 md:w-80  p-2  mx-16 items-center justify-start hover:bg-[#234069] dark:hover:bg-[#FFE2E2] rounded-md">
                   <div className="text-[#9faabc] text-lg font-Roboto dark:text-black font-bold">{i + 1}</div>
 
                   {tags[Math.floor(Math.random() * 4)]}
@@ -92,7 +92,7 @@ const TopArtists = () => {
                       : songCover
                   }
                   alt="artist image"
-                  className="w-60 rounded-full shadow-3xl "
+                  className="md:w-60 w-40 rounded-full shadow-3xl "
                 />
               </div>
             ))}

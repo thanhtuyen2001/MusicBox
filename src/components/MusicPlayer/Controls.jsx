@@ -18,7 +18,7 @@ const Controls = ({
   handlePrevSong,
   handleNextSong,
 }) => (
-  <div className="flex items-center justify-around md:w-36 lg:w-52 2xl:w-80">
+  <div className="flex items-center justify-around md:w-36 lg:w-52 2xl:w-80 gap-2">
     {/* repeat icon */}
     <BsArrowRepeat
       size={20}

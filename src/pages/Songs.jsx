@@ -39,7 +39,7 @@ const Songs = () => {
       </div>
 
       {/* songs  */}
-      <div className="flex flex-wrap sm:justify-between gap-8 px-8">
+      <div className="flex flex-wrap sm:justify-start gap-6 px-8 ">
         {data?.map((song, i) => (
           <SongCard
             key={song.key}

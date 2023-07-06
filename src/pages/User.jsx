@@ -10,6 +10,7 @@ import MVCard from '../components/ListMV/MVCard';
 
 const User = () => {
   const { data } = useGetTopChartsQuery();
+  // console.log(data)
   const favouriteArtist = data.slice(0, 3);
 
   const [toggleState, setToggleState] = useState(1);

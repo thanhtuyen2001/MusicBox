@@ -9,10 +9,10 @@ const Podcast = () => {
     
 
     return (
-        <div   className='pageTheme p-8 animate-slideup'>
+        <div className='pageTheme p-8 animate-slideup h-screen overflow-auto'>
             {/* title */}
             <div>
-                <p className='text-5xl'>Play all your favofite <span className='text-pink-600'>Podcast</span>  <BsCloudHaze2Fill /></p>
+                <p className='text-3xl sm:text-5xl'>Play all your favofite <span className='text-pink-600'>Podcast</span>  <BsCloudHaze2Fill /></p>
                 <p className='my-2 text-xl text-slate-500'>Listen Now, Enjoy Every Day</p>
                 <p className='text-2xl font-bold mb-4 mt-10'>Popular Podcast</p>
             </div>
@@ -25,11 +25,11 @@ const Podcast = () => {
                                 <img src={item.img} className="opacity-95 " alt="podcast image" />
                             </div>
                             <div className={`absolute bottom-0 right-[5%] w-[90%] p-2 mb-4 bg-white opacity-70 rounded-xl`}>
-                                <p className='text-black '>{item.topic}</p>
-                                <p className='font-bold text-lg text-slate-900 shadow-xl'>{item.title}</p>
+                                <p className='text-black hidden md:block'>{item.topic}</p>
+                                <p className='font-bold md:text-lg text-slate-900 shadow-xl'>{item.title}</p>
                                 <div className='flex justify-between text-slate-700 '>
                                     <p>{item.speaker}</p>
-                                    <p className='flex items-center gap-1'><BsFillClockFill/> {item.time}</p>
+                                    <p className='hidden md:flex items-center gap-1 '><BsFillClockFill/> {item.time}</p>
                                 </div>
                             </div>
                         </div>

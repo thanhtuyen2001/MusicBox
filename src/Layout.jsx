@@ -1,6 +1,5 @@
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-
+import React from 'react';
 import Signup from './pages/Signup';
 import App from './App';
 import { ArtistDetails, TopArtists, AroundYou, Discover, Search, SongDetails, TopCharts, Login, MV, Songs, User, Podcast } from './pages';
@@ -23,10 +22,10 @@ const Layout = () => (
         <Route path="/mv" element={<MV />} />
         <Route path="/songs" element={<Songs />} />
         <Route path="/user" element={<User />}>
-          <Route path='/user/favourite-songs' element={<FavouriteSongs />}/>
-          <Route path='/user/favourite-podcast' element={<FavouritePodcast />}/>
-          <Route path='/user/favourite-album' element={<FavouriteAlbum/>}/>
-          <Route path='/user/favourite-mv' element={<FavouriteSongs/>}/>
+          <Route path="/user/favourite-songs" element={<FavouriteSongs />} />
+          <Route path="/user/favourite-podcast" element={<FavouritePodcast />} />
+          <Route path="/user/favourite-album" element={<FavouriteAlbum />} />
+          <Route path="/user/favourite-mv" element={<FavouriteSongs />} />
         </Route>
       </Route>
     </Routes>
